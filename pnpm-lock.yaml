@@ -1,14 +1,14 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@peeky/test': ^0.7.3
+  '@peeky/test': ^0.8.2
   '@vitejs/plugin-vue': ^1.10.2
   '@vue/test-utils': ^2.0.0-rc.17
   vite: ^2.7.1
   vue: ^3.2.24
 
 devDependencies:
-  '@peeky/test': 0.7.3
+  '@peeky/test': 0.8.3
   '@vitejs/plugin-vue': 1.10.2_vite@2.7.1
   '@vue/test-utils': 2.0.0-rc.17_vue@3.2.24
   vite: 2.7.1
@@ -130,19 +130,19 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@peeky/cli/0.7.3:
-    resolution: {integrity: sha512-D4Z7CYgv9TZiJvIC6EGzCX4J/jFcKa7kjkXy3JBeBI4Li9vUo8609jRXBorWl0yLuvmn1HWBBv5Pl1ShknCyHw==}
+  /@peeky/cli/0.8.3:
+    resolution: {integrity: sha512-pkMA7rZowknq7FivwOD6foNhhizIZ4RDVUJorSUbzqZadHoMshAXyb6YLhMfMf2PWHpleyMtV6WyLsHjkzff3A==}
     hasBin: true
     dependencies:
-      '@peeky/config': 0.7.3
-      '@peeky/eslint-plugin': 0.7.3
-      '@peeky/runner': 0.7.3
-      '@peeky/server': 0.7.3
-      commander: 7.2.0
+      '@peeky/config': 0.8.3
+      '@peeky/eslint-plugin': 0.8.3
+      '@peeky/runner': 0.8.3
+      '@peeky/server': 0.8.3
       consola: 2.15.3
-      lodash-es: 4.17.21
+      lodash: 4.17.21
       open: 7.4.2
       portfinder: 1.0.28
+      sade: 1.7.4
     transitivePeerDependencies:
       - bufferutil
       - eslint
@@ -152,16 +152,17 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@peeky/client-dist/0.7.3:
-    resolution: {integrity: sha512-cv7BuVMfZ7JP8W3ARASgBYXpVSzGQojo0IJhGAfgOuR3QDRSCY6Ztb7uGJKUuWnm4dYFBfRZPjdNB22QfLMW2Q==}
+  /@peeky/client-dist/0.8.3:
+    resolution: {integrity: sha512-Q3fED/CWmNcEB7ukvXxo5kpsuqrvGucGk7Mg/qJtBIUvOlbjeCOvqWeR43HUmg6hhDpRieScet3ksn/2hDffHA==}
     dev: true
 
-  /@peeky/config/0.7.3:
-    resolution: {integrity: sha512-XCYgbb/hTjhyyG3h0zJil6dO+p16G3DfUm4lEF4U2LuR7UaIJSgnlUlPpf/3dVVo/TNYMraNFNPvD9pggAFoGw==}
+  /@peeky/config/0.8.3:
+    resolution: {integrity: sha512-VCx+r+qQ+N8LzmQLSd5F4lgPr118Mvbl9UfrtlA96o4ZKyYnr9ziDy624J6Wm4i+ZsQRab0RtB8AeL+0iwIwEg==}
     dependencies:
-      '@peeky/utils': 0.7.3
+      '@peeky/utils': 0.8.3
       consola: 2.15.3
       reactive-fs: 0.4.1
+      shortid: 2.2.16
       vite: 2.7.1
     transitivePeerDependencies:
       - less
@@ -169,18 +170,18 @@ packages:
       - stylus
     dev: true
 
-  /@peeky/eslint-plugin/0.7.3:
-    resolution: {integrity: sha512-F94mCaDI7QSxVXPl5fRDlPK2f/IXUMhN5HX05nUNiNK7pkKRyuTl/S3ax2+ncfcV3clutgiVEKZHlKCx6sot1w==}
+  /@peeky/eslint-plugin/0.8.3:
+    resolution: {integrity: sha512-BpOfn45JY/jjJi3i7a/QU8TT10/bg+sbFJWPuLKp5Kw8nEoNwJygZvhBGazzzJeCLC1S3lXXyq9QE7k1HyR7Zw==}
     peerDependencies:
       eslint: '>=6'
     dev: true
 
-  /@peeky/runner/0.7.3:
-    resolution: {integrity: sha512-IorAEHFxO6HhWk+Lr83KnuCvVtF48kuR9toI0Rl/L7yl2Fj5lKwBMnppgGicaUA7zT59ak+mfAyFaARIZxSNcQ==}
+  /@peeky/runner/0.8.3:
+    resolution: {integrity: sha512-39xZzML6pEqLtA6wiXM1P99KimJfjg1Y5AqXCFPx7tDbyWCJwSyaxT3OWr6qwCL3MJfz8evDzDAS+mH+uZp+OA==}
     dependencies:
       '@akryum/workerpool': 6.0.5-alpha.2
-      '@peeky/config': 0.7.3
-      '@peeky/utils': 0.7.3
+      '@peeky/config': 0.8.3
+      '@peeky/utils': 0.8.3
       '@types/sinon': 9.0.11
       anymatch: 3.1.2
       chalk: 5.0.0
@@ -193,12 +194,14 @@ packages:
       fs-extra: 10.0.0
       fs-monkey: 1.0.3
       happy-dom: 2.24.4
-      lodash-es: 4.17.21
+      lodash: 4.17.21
       memfs: 3.4.0
+      mlly: 0.3.15
       pragma: 1.0.0
       reactive-fs: 0.4.1
       shortid: 2.2.16
       sinon: 9.2.4
+      slugify: 1.6.3
       source-map: 0.7.3
       source-map-support: 0.5.21
       typescript: 4.5.2
@@ -209,12 +212,12 @@ packages:
       - stylus
     dev: true
 
-  /@peeky/server/0.7.3:
-    resolution: {integrity: sha512-MJGheSSeGZXMmInFeBU8QXvp1hMYEnUR6Grqr6OU7RnRXO9YxPgDg/TUzmARbzehfkGYncf40+engUht+o5Z8A==}
+  /@peeky/server/0.8.3:
+    resolution: {integrity: sha512-ONujNAJTrrhyF7Gkxlqp4gclYMrFCxM+0IpuJOeNzcy6GByIlYUXghRP/tUfTUo02vpocXgBrvtSKp3CW/g86Q==}
     dependencies:
-      '@peeky/client-dist': 0.7.3
-      '@peeky/config': 0.7.3
-      '@peeky/runner': 0.7.3
+      '@peeky/client-dist': 0.8.3
+      '@peeky/config': 0.8.3
+      '@peeky/runner': 0.8.3
       ansi_up: 5.1.0
       apollo-server-express: 2.25.3_graphql@15.8.0
       chokidar: 3.5.2
@@ -241,14 +244,14 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@peeky/test/0.7.3:
-    resolution: {integrity: sha512-dwfH6ltA8VpkJ0eF2EOMO4vkSh83cTAzhFgWRHlFgXzJvngNJbtvcrqVfBIeVH4vbJuYO1rE+m5LpspdS947BQ==}
+  /@peeky/test/0.8.3:
+    resolution: {integrity: sha512-52s87ftsfHNF5sgw3Gez6leKmSUHcjPf0ErVD5ak1oeDv58uXTd9frOWaxjx231EXy/40Zp61QKCDN7rWphdQA==}
     hasBin: true
     dependencies:
-      '@peeky/cli': 0.7.3
-      '@peeky/config': 0.7.3
-      '@peeky/eslint-plugin': 0.7.3
-      '@peeky/runner': 0.7.3
+      '@peeky/cli': 0.8.3
+      '@peeky/config': 0.8.3
+      '@peeky/eslint-plugin': 0.8.3
+      '@peeky/runner': 0.8.3
     transitivePeerDependencies:
       - bufferutil
       - eslint
@@ -258,8 +261,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@peeky/utils/0.7.3:
-    resolution: {integrity: sha512-2LZTWsOsQvy4FcD2dhmgO7Zted60OPj1nGI9uFYawDGOAJ8V/2B9uBnvewhFW+sGDvY42mahuXXaR9xusL5Vrw==}
+  /@peeky/utils/0.8.3:
+    resolution: {integrity: sha512-cqXeTObNemG/99e/AQOZwlKPn0vbBhCawHjYM+vqUnn/1UcT0LE0o5zjt38ZtMbFjN6qshDqcvTYMGRZ6/4nRA==}
     dependencies:
       chalk: 5.0.0
       consola: 2.15.3
@@ -1022,11 +1025,6 @@ packages:
   /commander/6.2.1:
     resolution: {integrity: sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==}
     engines: {node: '>= 6'}
-    dev: true
-
-  /commander/7.2.0:
-    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
-    engines: {node: '>= 10'}
     dev: true
 
   /concat-stream/1.6.2:
@@ -1953,10 +1951,6 @@ packages:
       shell-quote: 1.7.3
     dev: true
 
-  /lodash-es/4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: true
-
   /lodash.get/4.4.2:
     resolution: {integrity: sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=}
     dev: true
@@ -2062,6 +2056,15 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.5
+    dev: true
+
+  /mlly/0.3.15:
+    resolution: {integrity: sha512-3btbOX6XaoIMXRhLu0T/D9jPRrjJXl4R7Dl+EbpN7BYcQwehmt5UAYrIa2m9D/ywcXIUvDM+OTCON+ShFggndg==}
+    dev: true
+
+  /mri/1.2.0:
+    resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
+    engines: {node: '>=4'}
     dev: true
 
   /ms/2.0.0:
@@ -2363,6 +2366,13 @@ packages:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
       queue-microtask: 1.2.3
+    dev: true
+
+  /sade/1.7.4:
+    resolution: {integrity: sha512-y5yauMD93rX840MwUJr7C1ysLFBgMspsdTo4UVrDg3fXDvtwOyIqykhVAAm6fk/3au77773itJStObgK+LKaiA==}
+    engines: {node: '>= 6'}
+    dependencies:
+      mri: 1.2.0
     dev: true
 
   /safe-buffer/5.1.2:
